@@ -1,0 +1,19 @@
+{
+  "name": "Amo test",
+  "version": "0.0.3",
+  "description": "Build an Extension!",
+  "permissions": [
+    "https://web.amo.tm/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.amo.tm/*"
+      ],
+      "js": [
+        "background.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
