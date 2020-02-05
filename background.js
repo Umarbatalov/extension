@@ -33,6 +33,8 @@ textArea.addEventListener('input', () => {
       'display: flex;'
     );
 
+    const emoji = ['(ง\'̀-\'́)ง', '( ͡° ͜ʖ ͡°)', '⊂(*_*⊂ )∘˚˳°', '╭(◔ ◡ ◔)/ ',];
+
     for (let i = 0; i <= 3; i++) {
       let child = document.createElement('div');
 
@@ -46,9 +48,21 @@ textArea.addEventListener('input', () => {
         'padding-top: 11px;'
       );
 
-      child.innerText = '(ू˃̣̣̣̣̣̣︿˂̣̣̣̣̣̣ ू)';
+      child.innerText = emoji[i];
 
       NewElement.appendChild(child);
+
+      child.addEventListener('click', function (e) {
+        let char = textArea.innerText.slice(-1);
+
+        if (char === ':') {
+          textArea.innerText = textArea.innerText.replace(/:$/, e.currentTarget.innerText).toString();
+
+          if (typeof NewElement !== 'undefined') {
+            NewElement.remove();
+          }
+        }
+      });
     }
 
     insertAfter(NewElement, after);

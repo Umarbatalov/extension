@@ -1,6 +1,6 @@
 {
   "name": "Amo test",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Build an Extension!",
   "permissions": [
     "https://web.amo.tm/*"
