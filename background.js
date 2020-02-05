@@ -61,6 +61,7 @@ textArea.addEventListener('input', () => {
         'height: 35px;' +
         'margin-left: 15px;' +
         'border-radius: 21px;' +
+        'overflow: hidden;' +
         'padding-top: 11px;'
       );
 
