@@ -25,17 +25,33 @@ textArea.addEventListener('input', () => {
       'position: absolute;' +
       'bottom: 48px;' +
       'height: 61px;' +
-      'width: 354px;' +
+      'width: 370px;' +
       'background-color: lightgrey;' +
       'border-radius: 21px;' +
       'text-align: center;' +
       'padding-top: 16px;' +
+      'overflow: hidden;' +
       'display: flex;'
     );
 
-    const emoji = ['(ง\'̀-\'́)ง', '( ͡° ͜ʖ ͡°)', '⊂(*_*⊂ )∘˚˳°', '╭(◔ ◡ ◔)/ ',];
+    const emoji = ['(ง\'̀-\'́)ง', '( ͡° ͜ʖ ͡°)', '⊂(*_*⊂ )∘˚˳°', '╭(◔ ◡ ◔)/ ', `ЗАПУСКАЕМ
+░ГУСЯ░▄▀▀▀▄░РАБОТЯГИ░░
+▄███▀░◐░░░▌░░░░░░░
+░░░░▌░░░░░▐░░░░░░░
+░░░░▐░░░░░▐░░░░░░░
+░░░░▌░░░░░▐▄▄░░░░░
+░░░░▌░░░░▄▀▒▒▀▀▀▀▄
+░░░▐░░░░▐▒▒▒▒▒▒▒▒▀▀▄
+░░░▐░░░░▐▄▒▒▒▒▒▒▒▒▒▒▀▄
+░░░░▀▄░░░░▀▄▒▒▒▒▒▒▒▒▒▒▀▄
+░░░░░░▀▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▀▄
+░░░░░░░░░░░▌▌▌▌░░░░░
+░░░░░░░░░░░▌▌░▌▌░░░░░
+░░░░░░░░░▄▄▌▌▄▌▌░░░░░
+запускаем гуся работяги
+`,];
 
-    for (let i = 0; i <= 3; i++) {
+    for (let i = 0; i <= 4; i++) {
       let child = document.createElement('div');
 
       child.setAttribute(
